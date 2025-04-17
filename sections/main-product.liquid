@@ -106,7 +106,7 @@
                   </a>
                 </div>
               {%- when 'pincode_Checker'-%}
-              
+                {% render 'pincode-validator' %}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
